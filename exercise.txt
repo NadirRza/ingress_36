@@ -1,0 +1,21 @@
+sual 1 :  System.gc()  garbage collectoru çağırmaq üçün istifadə olunur. Əsas məqsədi odur ki, heap yaddaşda istifadə olunub bitmiş obyektleri silir. Yeni stack yaddaşda olan deyisen silinir stack yaddaşdaki deyisen silinende sonra sistem görür ki heapda olan obyektin stackla olan elaqesi itib belece basa düşür ki stackdaki bu obyekt artiq islemir. Garbage collector gelir ve bu obyekti heap yaddaşdan silir
+
+
+sual 2: -
+sual 3: Stack yaddaş: metod bitdikde avtomatik silinir,primitive tipler saxlanılır, yaddaşda tutduğu yer daha azdır/ Heap yaddaş : garbage collector vasitesi ile silinir, daha uzun ömürlü yaddaşdır, obyektlerin özü heap yaddaşda saxlanılır, yaddaşda tutduğu yer çoxdur
+ 
+sual 4 : Javada metodlar çağırılarkən stack yaddaşda frame yaranır. Metodun daxilinde  elan edilmiş dəyişənlər meselen primitive tipler stack yaddaşda saxlanilir. Metod tamamlandıqda stack yaddaş metodu avtomatik silir ve yer boşalır.
+
+sual 5 : Metaspacede classlar ve classların terkibindeki metodların binary formaları burda saxlanılır
+
+sual 6 : Garbage Collection vasitesi ile
+
+sual 7 : Garbage Collection JVM terefinde avtomatik idare olunur. Eger Heap yaddaş dolursa ve ya müeyyen bir limite çatıbsa  JVM  GC prosesini işe salır ve yaddaşı temizleyir. GC prosesini el ile de çağırmaq mümkündür. Bunun üçün də   System.gc() metodundan istifade etmək olar.
+
+sual 8 :  System.gc() GC prosesini mecbur ede bilmez. System.gc() JVMe GC prosesinin işe düşmesi barede mesaj gönderir. JVM bu mesajı qebul edib derhal GC prosesini işe salmır. JVM analiz edir uygun vaxtda GCnı işe salır.
+
+sual 9 : Javada obyektin özü heap yaddaşda yerləşir. Yeni biz new operatoru ile bir obyekt yaradıldıqda, bu obyekt Heap yaddaşında saxlanılır. obyekte verdiyimiz deyisen adı ise stack yaddaşda saxlanılır. meselen Car myCar = new Car();  burda obyektin ozu new Car() heapda yerlesir, Car mycar ise stackda yerlesir
+
+sual 10 : 0 çap olunacaq (++a ifadesine göre helle baslamamisdan qabaq a-ın qiymeti 1 vahid artır 9 olur. Mörterizenin içi hesablanır 9/3=3+2=5. % qaligi hesablayir. 5%5=0 qaliq olmadigina gore morterizenin cavabi 0 olur. a-in qiymeti 9 oldugu ucun sonda 9 * 0 = 0 
+
+sual 11 : 16 çap olunacaq(++x ifadesi x-in qiymetini 1 vahid artırdı x 10 oldu. lakin bu sol terefde yazdığımız xe tesir etmir onun qiymeti 9 olaraq qalır çünki yeni qiymet  ona elave oluanacaq. y-- ifadesi yin qiymetini evvelce teyin elediyimiz qiymeti deyismeden hesablamagimizi isteyir. ona gore de y 4 olaraq hesablanir 4/2 = 2 olur. daha sonra 10 %2= 0 olur qaliq qalmadigina gore 0+7 = 7 olur x+=7 yeni ki 9+7=16 olur. y-i cap etsek y 3 olacaq lakin hesablama prosesinde 4 olaraq hesablanmisdi. buna sebeb de y-- ifadesidir.) 
